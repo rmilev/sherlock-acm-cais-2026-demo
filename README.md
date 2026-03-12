@@ -33,11 +33,21 @@ Software teams at scale face a persistent bottleneck: production issues accumula
 
 5. **Human-in-the-loop** — When information is insufficient, the agent documents its progress and pauses. Its workspace is persisted across AgentCore Memory, S3, and ECS. When a human provides direction, the agent resumes from where it left off.
 
+## Demo Artifacts
+
+The demo scenario resolves a production issue in a shopping cart application where the trending products recommendation feature fails due to an N+1 query performance problem.
+
+| Artifact | Description |
+|----------|-------------|
+| [shopping-cart-demo](https://github.com/uday1bhanu/shopping-cart-demo) | Target application — Java Spring Boot shopping cart service with the N+1 query bug |
+| [Generated PR #3](https://github.com/uday1bhanu/shopping-cart-demo/pull/3) | Pull request created by Sherlock fixing the `getTrendingProducts()` N+1 query |
+| [New Relic logs](demo-artifacts/shopping-cart-demo-newrelic-logs.CSV) | Production error logs showing the performance violation and stack trace |
+
 ## Resources
 
 | Resource | Link |
 |----------|------|
-| Demo Video (YouTube) | [https://youtu.be/p_v1C1_SEJA](https://youtu.be/p_v1C1_SEJA) |
+| Demo Video (YouTube) | [https://youtu.be/mNLWLCOL9sg](https://youtu.be/mNLWLCOL9sg) |
 | Demo Video (raw) | [video/sherlock-demo.mp4](video/sherlock-demo.mp4) |
 | Conference | [ACM CAIS 2026](https://www.caisconf.org/) |
 
@@ -47,6 +57,8 @@ Software teams at scale face a persistent bottleneck: production issues accumula
 ├── README.md
 ├── figures/                         # Architecture diagram
 │   └── sherlock-arch.png
+├── demo-artifacts/                  # Artifacts from the demo scenario
+│   └── shopping-cart-demo-newrelic-logs.CSV
 └── video/                           # Demo video (raw binary for archival)
     └── sherlock-demo.mp4
 ```
