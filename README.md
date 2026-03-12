@@ -51,18 +51,6 @@ The demo scenario resolves a production issue in a shopping cart application whe
 | Demo Video (raw) | [video/sherlock-demo.mp4](video/sherlock-demo.mp4) |
 | Conference | [ACM CAIS 2026](https://www.caisconf.org/) |
 
-## Repository Structure
-
-```
-├── README.md
-├── figures/                         # Architecture diagram
-│   └── sherlock-arch.png
-├── demo-artifacts/                  # Artifacts from the demo scenario
-│   └── shopping-cart-demo-newrelic-logs.CSV
-└── video/                           # Demo video (raw binary for archival)
-    └── sherlock-demo.mp4
-```
-
 ## Technology Stack
 
 - **Agent Framework:** Claude SDK running in Docker containers
@@ -71,3 +59,13 @@ The demo scenario resolves a production issue in a shopping cart application whe
 - **Event Ingestion:** AWS Lambda
 - **Persistence:** AgentCore Memory (conversational context), S3 (workspace snapshots), ECS (container state)
 - **Orchestration:** Swarm pattern — sub-agents for parallel New Relic queries and codebase analysis
+
+## Repository Structure
+
+```
+├── README.md
+├── demo-artifacts/                     # Artifacts from the demo scenario
+│   └── shopping-cart-demo-newrelic-logs.CSV
+├── figures/                            # Architecture diagram
+└── video/                              # Demo video (raw binary for archival)
+```
