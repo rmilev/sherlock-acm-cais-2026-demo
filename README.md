@@ -47,7 +47,7 @@ The demo scenario resolves a production issue in a shopping cart application whe
 
 | Resource | Link |
 |----------|------|
-| Demo Video (raw) | [video/sherlock-demo.mp4](video/sherlock-demo.mp4) |
+| Demo Video | [video/sherlock-demo.mp4](video/sherlock-demo.mp4) |
 | Conference | [ACM CAIS 2026](https://www.caisconf.org/) |
 
 ## Technology Stack
@@ -66,5 +66,5 @@ The demo scenario resolves a production issue in a shopping cart application whe
 ├── demo-artifacts/                     # Artifacts from the demo scenario
 │   └── shopping-cart-demo-newrelic-logs.CSV
 ├── figures/                            # Architecture diagram
-└── video/                              # Demo video (raw binary for archival)
+└── video/                              # Demo video
 ```
