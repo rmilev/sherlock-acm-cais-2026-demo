@@ -47,7 +47,6 @@ The demo scenario resolves a production issue in a shopping cart application whe
 
 | Resource | Link |
 |----------|------|
-| Demo Video (YouTube) | [https://youtu.be/mNLWLCOL9sg](https://youtu.be/mNLWLCOL9sg) |
 | Demo Video (raw) | [video/sherlock-demo.mp4](video/sherlock-demo.mp4) |
 | Conference | [ACM CAIS 2026](https://www.caisconf.org/) |
 
